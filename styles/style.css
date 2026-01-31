@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.font-inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+
+/* == Shared styles== */
+.flex {
+    display: flex;
+}
+
+.btn {
+    background-image: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
+    padding: 12px 16px;
+    border: none;
+    border-radius: 100px;
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-image: linear-gradient(20deg, #F7E93F, #FB09B4, #9100F8);
+}
+
+.text-grad {
+    background: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/*============= Header styles =========== */
+
+
+header {
+    background-color: #1A0B2E;
+    border-bottom: 1px solid #412567;
+}
+
+
+header nav {
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px 0px;
+}
+
+header nav .brand {
+    font-size: 2.4rem;
+    color: white;
+}
+
+header nav ul {
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    gap: 32px;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+header nav ul a:hover {
+    background: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+header nav .hambarger{
+    display: none;
+}
+
+/* ===== Banner Section style ====== */
+#banner {
+    background-image: url(../images/hero-bg.png);
+    background-repeat: no-repeat;
+    max-width: 1600px;
+    height: 760px;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#banner .circle {
+    background-image: url(../images/hero-circle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* margin-top: 0px; */
+    width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.pop-up {
+    padding: 8px 16px;
+    background-color: #00FF88;
+    color: #1A0B2E;
+    box-shadow: -2px 0px 7px rgb(12, 114, 10);
+    border-radius: 100px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    position: absolute;
+    right: 19px;
+    bottom: 300px;
+}
+
+#banner .banner-content {
+    padding-top: 40px;
+    text-align: center;
+}
+#banner .banner-content h1{
+    font-size: 3.75rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 8px;
+}
+#banner .banner-content p{
+    color: white;
+    margin-bottom: 24px;
+}
+.banner-content #spotify{
+    padding: 16px 20px;
+}
+.banner-content #subscribe{
+    border: 1px solid #00FF88;
+    background: transparent;
+    border-radius: 20px;
+    color: #00FF88;
+    margin-left: 8px;
+}
+
+
+@media screen and (max-width:576px) {
+   header nav ul, nav .btn{
+    display: none !important;
+   }
+
+header nav .hambarger{
+    display: block;
+}
+header nav{
+   
+}
+#banner{
+    max-width: 500px;
+}
+.circle{
+    width: 200px;
+    height: 200px;
+}
+.banner-content h1{
+    font-size: 40px;
+}
+}
