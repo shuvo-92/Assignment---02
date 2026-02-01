@@ -248,7 +248,7 @@ header nav .hambarger {
 
 #choose .choose-container {
     max-width: 1200px;
-    margin: 40px auto;
+    margin: 0 auto;
     padding-bottom: 90px;
     display: grid;
     gap: 30px;
@@ -293,45 +293,82 @@ header nav .hambarger {
 }
 
 
-/* ====== Festure Section Part============ */
+/* ====== Feature Section Part============ */
 #features {
-    /* max-width: 1600px; */
+    max-width: 1600px;
+    margin: 0 auto;
     background-color: #1A0B2E;
     color: #fff;
-    margin: 0 auto;
 }
 
 #features .feature-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 300px auto;
+    padding-bottom: 120px;
+    padding-top: 120px;
+}
 
+.feature-container h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 #features .feature-container .feature-episode {
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
 }
 
 #features .feature-container .feature-episode .episode-card {
-    background-color: #412567;
+    background-color: #250D44;
     border-radius: 24px;
-    padding: 20px;
 }
 
-footer {
-    margin-bottom: 300px;
+#features .feature-container .feature-episode .episode-card .video-link {
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
 }
 
-.feature-container h1 {
-    margin: 100px auto;
-    font-size: 4rem;
+#features .feature-container .feature-episode .episode-card .episode-card-title {
+    padding: 24px;
+}
+
+#features .feature-container .feature-episode .episode-card h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+#features .feature-container .feature-episode .episode-card p {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 24px;
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+
+#features .feature-container .feature-episode .episode-card .time-atamp {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #00FF88;
     font-weight: 600;
-    text-align: center;
 }
 
-/* ======== ========== */
+#features .feature-host-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 120px;
+}
+
+#features .feature-host-container h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 40px;
+}
 
 .feature-host {
     justify-content: space-around;
@@ -341,38 +378,42 @@ footer {
     border-radius: 30px;
 }
 
-.feature-host .host-image {
-    padding: 10px;
-}
-
 .feature-host .host-details {
-    margin-left: 20px;
+    margin-left: 24px;
 }
 
 .feature-host h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 800;
     margin-bottom: 16px;
 }
 
 .feature-host p {
     line-height: 24px;
-    font-size: 20px;
-    color: rgba(217, 222, 220, 0.929);
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 16px;
 }
 
 .feature-host .host-social-icon {
-    margin: 10px auto;
     display: flex;
     align-items: center;
+    gap: 8px;
 }
 
-.feature-host .host-social-icon img {
+.feature-host .host-social-icon .hst-icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 50%;
-    padding: 10px;
-    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.feature-host .host-social-icon .hst-icon:hover {
+    cursor: pointer;
+    background-color: #412567;
+}
 
 /* ======= Footer Section Styles  ========== */
 footer {
