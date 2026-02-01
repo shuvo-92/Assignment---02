@@ -179,11 +179,7 @@ header nav .hambarger {
     max-width: 1600px;
     padding: 50px 200px 120px;
     background-color: #1A0B2E;
-}
-
-#about .about-container {
-    max-width: 1200px;
-    text-align: center;
+    margin: 0 auto;
 }
 
 #about .about-content {
@@ -457,10 +453,14 @@ footer .footer-social-icon>div {
 
 
 
+
+
 /* ========= Media Query styles =============== */
 
 @media screen and (max-width:576px) {
 
+
+    /* ======= Header Media Styles =============== */
     header nav ul,
     nav .btn {
         display: none !important;
@@ -470,18 +470,155 @@ footer .footer-social-icon>div {
         display: block;
     }
 
-    header nav {}
+    header nav .hambarger:hover {
+        box-shadow: 1px 2px 9px rgba(255, 255, 255, 0.6);
+    }
 
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 20px;
+    }
+
+    header nav .brand {
+        font-size: 1.5rem;
+    }
+
+
+
+    /* =========  Banner Media Styles  ================= */
     #banner {
-        max-width: 500px;
+        max-height: 466px;
+        padding: 40px 20px;
     }
 
-    .circle {
-        width: 200px;
-        height: 200px;
+    #banner .circle {
+        max-width: 200px;
+        max-height: 200px;
     }
 
-    .banner-content h1 {
+    #banner .circle img {
+        width: 80px;  
+    }
+    #banner .banner-content {
+   padding-top: 24px;
+}
+    #banner .banner-content h1 {
         font-size: 40px;
+        font-weight: 900;
     }
+    .banner-content #spotify {
+    padding: 12px 20px;
+}
+.banner-content #subscribe {
+    padding: 12px 20px;}
+
+
+
+
+
+
+
+    /* =========== Some Share Styles ========================== */
+    #about,
+    #choose,
+    #features {
+        padding: 40px 20px;
+    }
+
+    #about .about-content h1,
+    #about .about-achivement .achive-card h1,
+    #choose h1,
+    #features .episode-container h1,
+    #features .feature-host-container h1 {
+        font-size: 2rem;
+        margin-bottom: 16px;
+    }
+
+    /* ======= About media style  ======= */
+
+    #about .about-content {
+        margin-bottom: 40px;
+    }
+
+    #about .about-achivement {
+        display: grid;
+        gap: 40px;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+        padding-top: 40px;
+    }
+
+
+    /* =======  Choosing Section Media ========= */
+    #choose .choose-card-container {
+        gap: 24px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "headphone"
+            "device"
+            "location"
+            "export"
+            "resource"
+        ;
+    }
+
+    #choose .choose-card-container .choose-card {
+        border-radius: 24px;
+        padding: 24px;
+    }
+
+    #choose .choose-card-container .choose-card h4 {
+        font-size: 22px;
+    }
+
+
+    /* ======== Feature Section Media Style   =============== */
+
+    #features .episode-container {
+        margin-bottom: 60px;
+    }
+
+    #features .episode-container .episode-box {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    #features .feature-host-container .feature-host {
+        gap: 16px;
+        padding: 24px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #features .feature-host-container .feature-host h2 {
+        font-size: 24px;
+    }
+
+    #features .feature-host-container .feature-host .host-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #features .feature-host-container .feature-host .host-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* ========== Foooter  Media style    ============ */
+    footer {
+        height: 248px;
+        gap: 24px;
+    }
+
+    footer .footer-social-icon {
+        max-width: 255px;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+
 }
