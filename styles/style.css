@@ -87,7 +87,7 @@ header nav ul a:hover {
     background-clip: text;
 }
 
-header nav .hambarger{
+header nav .hambarger {
     display: none;
 }
 
@@ -137,55 +137,125 @@ header nav .hambarger{
     padding-top: 40px;
     text-align: center;
 }
-#banner .banner-content h1{
+
+#banner .banner-content h1 {
     font-size: 3.75rem;
     font-weight: 800;
     color: white;
     margin-bottom: 8px;
 }
-#banner .banner-content p{
+
+#banner .banner-content p {
     color: white;
     margin-bottom: 24px;
 }
-.banner-content #spotify{
+
+.banner-content #spotify {
     padding: 16px 20px;
 }
-.banner-content #subscribe{
+
+.banner-content #spotify:hover {
+    background: #00FF88;
+}
+
+.banner-content #subscribe {
+    padding: 16px 20px;
     border: 1px solid #00FF88;
     background: transparent;
-    border-radius: 20px;
+    border-radius: 100px;
     color: #00FF88;
     margin-left: 8px;
 }
 
+.banner-content #subscribe:hover {
+    background: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
+    border: 1px solid transparent;
+    color: #fff;
+}
+
+
+
+
+
+
+/* ======== About section Styles =========== */
+#about {
+    max-width: 1600px;
+    padding: 50px 200px 120px;
+    background-color: #1A0B2E;
+}
+
+#about .about-container {
+    max-width: 1200px;
+    text-align: center;
+}
+
+#about .about-container .about-content {
+    color: #fff;
+    margin-bottom: 80px;
+    text-align: center;
+}
+#about .about-container .about-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+#about .about-container .about-content p {
+    color: rgba(255, 255, 255, 0.684);
+    line-height: 20px;
+
+}
+
+#about .about-container .about-achivement {
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    border-top: 1px solid rgba(255, 255, 255, 0.103);
+    padding-top: 80px;
+    margin-bottom: ;
+}
+
+#about .about-container .about-achivement .achive-card {
+    text-align: center;
+}
+
+#about .about-container .about-achivement .achive-card h1 {
+    color: #00FF88;
+    font-weight: 800;
+    font-size: 3rem;
+    margin-bottom: 8px;
+}
+
+#about .about-container .about-achivement .achive-card p {
+    color: #fff;
+}
+
+/* ========= Media Query styles =============== */
 
 @media screen and (max-width:576px) {
-   header nav ul, nav .btn{
-    display: none !important;
-   }
 
-header nav .hambarger{
-    display: block;
+    header nav ul,
+    nav .btn {
+        display: none !important;
+    }
+
+    header nav .hambarger {
+        display: block;
+    }
+
+    header nav {}
+
+    #banner {
+        max-width: 500px;
+    }
+
+    .circle {
+        width: 200px;
+        height: 200px;
+    }
+
+    .banner-content h1 {
+        font-size: 40px;
+    }
 }
-header nav{
-   
-}
-#banner{
-    max-width: 500px;
-}
-.circle{
-    width: 200px;
-    height: 200px;
-}
-.banner-content h1{
-    font-size: 40px;
-}
-}
-
-
-
-
-
-
-
-/*  */
