@@ -1,6 +1,7 @@
+/* ======= Font import From google fonts ========== */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-
+/* === All styles None === */
 * {
     margin: 0;
     padding: 0;
@@ -17,8 +18,7 @@ body {
     font-optical-sizing: auto;
 }
 
-
-/* == Shared styles== */
+/* ===== Shared styles ====== */
 .flex {
     display: flex;
 }
@@ -28,7 +28,7 @@ body {
     padding: 12px 16px;
     border: none;
     border-radius: 100px;
-    color: aliceblue;
+    color: #fff;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
@@ -48,12 +48,10 @@ body {
 
 /*============= Header styles =========== */
 
-
 header {
     background-color: #1A0B2E;
     border-bottom: 1px solid #412567;
 }
-
 
 header nav {
     justify-content: space-around;
@@ -63,7 +61,7 @@ header nav {
 
 header nav .brand {
     font-size: 2.4rem;
-    color: white;
+    color: #fff;
 }
 
 header nav ul {
@@ -75,7 +73,7 @@ header nav ul {
 
 header nav ul a {
     text-decoration: none;
-    color: white;
+    color: #fff;
     font-size: 1rem;
     font-weight: 500;
 }
@@ -99,7 +97,6 @@ header nav .hambarger {
     height: 760px;
     background-position: center;
     background-size: cover;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,7 +108,6 @@ header nav .hambarger {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /* margin-top: 0px; */
     width: 350px;
     height: 350px;
     display: flex;
@@ -141,12 +137,12 @@ header nav .hambarger {
 #banner .banner-content h1 {
     font-size: 3.75rem;
     font-weight: 800;
-    color: white;
+    color: #fff;
     margin-bottom: 8px;
 }
 
 #banner .banner-content p {
-    color: white;
+    color: rgba(255, 255, 255, 0.6);
     margin-bottom: 24px;
 }
 
@@ -169,7 +165,7 @@ header nav .hambarger {
 
 .banner-content #subscribe:hover {
     background: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
-    border: 1px solid transparent;
+    border: 1px solid #1A0B2E;
     color: #fff;
 }
 
@@ -190,74 +186,80 @@ header nav .hambarger {
     text-align: center;
 }
 
-#about .about-container .about-content {
+#about .about-content {
+    max-width: 1200px;
+    text-align: center;
     color: #fff;
     margin-bottom: 80px;
-    text-align: center;
 }
 
-#about .about-container .about-content h1 {
+#about .about-content h1 {
     font-size: 3rem;
-    font-weight: bold;
+    font-weight: 800;
     margin-bottom: 16px;
 }
 
-#about .about-container .about-content p {
-    color: rgba(255, 255, 255, 0.684);
+#about .about-content p {
+    color: rgba(255, 255, 255, 0.6);
     line-height: 20px;
 }
 
-#about .about-container .about-achivement {
+#about .about-achivement {
+    max-width: 1200px;
     justify-content: space-between;
     align-items: center;
     gap: 80px;
-    border-top: 1px solid rgba(255, 255, 255, 0.103);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     padding-top: 80px;
 }
 
-#about .about-container .about-achivement .achive-card {
-    text-align: right;
-}
-
-#about .about-container .about-achivement .achive-card h1 {
+#about .about-achivement .achive-card h1 {
     color: #00FF88;
-    font-weight: 800;
+    font-weight: 900;
     font-size: 3rem;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
+    text-align: center;
 }
 
-#about .about-container .about-achivement .achive-card p {
-    color: #fff;
+#about .about-achivement .achive-card p {
+    color: rgba(255, 255, 255, 0.6);
 }
 
 
-/* ======== Choose Section  =========== */
+/* ======== Choose Section styles  =========== */
 #choose {
     max-width: 1600px;
     margin: 0 auto;
     background-color: #230e3d;
-    color: white;
+    color: #fff;
+    padding: 120px 200px;
 }
 
 #choose h1 {
     text-align: center;
-    padding: 200px auto;
     font-size: 3rem;
-    padding-top: 160px;
+    font-weight: 800;
+    margin-bottom: 40px;
 }
 
-#choose .choose-container {
+#choose .choose-card-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding-bottom: 90px;
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "headphone device device" "headphone location location" "export export resource";
+    grid-template-areas:
+        "headphone device device"
+        "headphone location location"
+        "export export resource";
 }
 
 .headphone {
     grid-area: headphone;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 .device {
@@ -276,80 +278,82 @@ header nav .hambarger {
     grid-area: resource;
 }
 
-#choose .choose-container .choose-card {
+#choose .choose-card-container .choose-card {
     background-color: rgba(53, 17, 101, 0.4);
-    border-radius: 30px;
-    padding: 30px;
+    /*color exact from figma*/
+    border-radius: 40px;
+    padding: 40px;
 }
 
-#choose .choose-container .choose-card h4 {
+#choose .choose-card-container .choose-card h4 {
     font-size: 24px;
     font-weight: 800;
     margin: 16px 0px;
 }
 
-#choose .choose-container .choose-card p {
-    color: rgba(217, 222, 220, 0.929);
+#choose .choose-card-container .choose-card p {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 24px;
 }
 
 
-/* ====== Feature Section Part============ */
+/* ====== Feature Section Styles ============ */
 #features {
     max-width: 1600px;
     margin: 0 auto;
     background-color: #1A0B2E;
     color: #fff;
+    padding: 120px 200px;
 }
 
-#features .feature-container {
+#features .episode-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding-bottom: 120px;
-    padding-top: 120px;
+    margin-bottom: 120px;
 }
 
-.feature-container h1 {
+.episode-container h1 {
     font-size: 3rem;
     font-weight: 800;
     text-align: center;
     margin-bottom: 40px;
 }
 
-#features .feature-container .feature-episode {
+#features .episode-container .episode-box {
     justify-content: space-between;
     align-items: center;
     gap: 30px;
 }
 
-#features .feature-container .feature-episode .episode-card {
+#features .episode-container .episode-box .episode-card {
     background-color: #250D44;
     border-radius: 24px;
 }
 
-#features .feature-container .feature-episode .episode-card .video-link {
+#features .episode-container .episode-box .episode-card .video-link {
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
 }
 
-#features .feature-container .feature-episode .episode-card .episode-card-title {
+#features .episode-container .episode-box .episode-card .episode-card-title {
     padding: 24px;
 }
 
-#features .feature-container .feature-episode .episode-card h1 {
+#features .episode-container .episode-box .episode-card .episode-card-title h1 {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 12px;
     text-align: left;
 }
 
-#features .feature-container .feature-episode .episode-card p {
+#features .episode-container .episode-box .episode-card p {
     color: rgba(255, 255, 255, 0.6);
     line-height: 24px;
     font-size: 1rem;
     margin-bottom: 12px;
 }
 
-#features .feature-container .feature-episode .episode-card .time-atamp {
+#features .episode-container .episode-box .episode-card .time-atamp {
     display: flex;
     align-items: center;
     gap: 6px;
@@ -357,10 +361,11 @@ header nav .hambarger {
     font-weight: 600;
 }
 
+
+/* ======== */
 #features .feature-host-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding-bottom: 120px;
 }
 
 #features .feature-host-container h1 {
@@ -370,19 +375,16 @@ header nav .hambarger {
     margin-bottom: 40px;
 }
 
-.feature-host {
+#features .feature-host-container .feature-host {
     justify-content: space-around;
+    gap: 24px;
     align-items: center;
     padding: 40px;
     background-color: #230e3d;
     border-radius: 30px;
 }
 
-.feature-host .host-details {
-    margin-left: 24px;
-}
-
-.feature-host h2 {
+#features .feature-host-container .feature-host h2 {
     font-size: 2rem;
     font-weight: 800;
     margin-bottom: 16px;
@@ -394,7 +396,7 @@ header nav .hambarger {
     margin-bottom: 16px;
 }
 
-.feature-host .host-social-icon {
+#features .feature-host-container .feature-host .host-social-icon {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -417,54 +419,43 @@ header nav .hambarger {
 
 /* ======= Footer Section Styles  ========== */
 footer {
+    max-width: 1600px;
+    height: 412px;
     background-image: url(../images/footer-bg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    max-width: 1600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
 }
 
-footer .foot-container {
-    justify-content: center;
-    flex-direction: column;
-    gap: 20px;
-    padding: 50px 0px;
-    text-align: center;
-}
 
 footer h1 {
-    font-size: 6rem;
-    text-align: center;
+    color: #fff;
+    font-size: 3rem;
     font-weight: 800;
-    color: white;
-    /* margin-top: 00px; */
 }
 
 footer .footer-social-icon {
-    flex-direction: row;
+    max-width: 550px;
     align-items: center;
     justify-content: space-around;
-    gap: 30px;
-    color: #cfcaca;
-    margin: 0 auto;
-    /* margin-top: 20px;
-    margin-bottom: 40px; */
-    font-size: 18px;
-
+    gap: 40px;
 }
 
 footer .footer-social-icon>div {
     display: flex;
     align-items: center;
-    gap: 9px;
+    gap: 8px;
+    font-weight: 500;
 }
 
-footer p {
-    color: rgb(157, 151, 151);
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 60px;
-}
+
 
 /* ========= Media Query styles =============== */
 
