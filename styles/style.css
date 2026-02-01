@@ -195,6 +195,7 @@ header nav .hambarger {
     margin-bottom: 80px;
     text-align: center;
 }
+
 #about .about-container .about-content h1 {
     font-size: 3rem;
     font-weight: bold;
@@ -204,7 +205,6 @@ header nav .hambarger {
 #about .about-container .about-content p {
     color: rgba(255, 255, 255, 0.684);
     line-height: 20px;
-
 }
 
 #about .about-container .about-achivement {
@@ -213,11 +213,10 @@ header nav .hambarger {
     gap: 80px;
     border-top: 1px solid rgba(255, 255, 255, 0.103);
     padding-top: 80px;
-    margin-bottom: ;
 }
 
 #about .about-container .about-achivement .achive-card {
-    text-align: center;
+    text-align: right;
 }
 
 #about .about-container .about-achivement .achive-card h1 {
@@ -229,6 +228,201 @@ header nav .hambarger {
 
 #about .about-container .about-achivement .achive-card p {
     color: #fff;
+}
+
+
+/* ======== Choose Section  =========== */
+#choose {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #230e3d;
+    color: white;
+}
+
+#choose h1 {
+    text-align: center;
+    padding: 200px auto;
+    font-size: 3rem;
+    padding-top: 160px;
+}
+
+#choose .choose-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding-bottom: 90px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "headphone device device" "headphone location location" "export export resource";
+}
+
+.headphone {
+    grid-area: headphone;
+}
+
+.device {
+    grid-area: device;
+}
+
+.location {
+    grid-area: location;
+}
+
+.export {
+    grid-area: export;
+}
+
+.resource {
+    grid-area: resource;
+}
+
+#choose .choose-container .choose-card {
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 30px;
+    padding: 30px;
+}
+
+#choose .choose-container .choose-card h4 {
+    font-size: 24px;
+    font-weight: 800;
+    margin: 16px 0px;
+}
+
+#choose .choose-container .choose-card p {
+    color: rgba(217, 222, 220, 0.929);
+}
+
+
+/* ====== Festure Section Part============ */
+#features {
+    /* max-width: 1600px; */
+    background-color: #1A0B2E;
+    color: #fff;
+    margin: 0 auto;
+}
+
+#features .feature-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 300px auto;
+
+}
+
+#features .feature-container .feature-episode {
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+#features .feature-container .feature-episode .episode-card {
+    background-color: #412567;
+    border-radius: 24px;
+    padding: 20px;
+}
+
+footer {
+    margin-bottom: 300px;
+}
+
+.feature-container h1 {
+    margin: 100px auto;
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* ======== ========== */
+
+.feature-host {
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    background-color: #230e3d;
+    border-radius: 30px;
+}
+
+.feature-host .host-image {
+    padding: 10px;
+}
+
+.feature-host .host-details {
+    margin-left: 20px;
+}
+
+.feature-host h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.feature-host p {
+    line-height: 24px;
+    font-size: 20px;
+    color: rgba(217, 222, 220, 0.929);
+}
+
+.feature-host .host-social-icon {
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+}
+
+.feature-host .host-social-icon img {
+    border-radius: 50%;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+
+/* ======= Footer Section Styles  ========== */
+footer {
+    background-image: url(../images/footer-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1600px;
+}
+
+footer .foot-container {
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 0px;
+    text-align: center;
+}
+
+footer h1 {
+    font-size: 6rem;
+    text-align: center;
+    font-weight: 800;
+    color: white;
+    /* margin-top: 00px; */
+}
+
+footer .footer-social-icon {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    color: #cfcaca;
+    margin: 0 auto;
+    /* margin-top: 20px;
+    margin-bottom: 40px; */
+    font-size: 18px;
+
+}
+
+footer .footer-social-icon>div {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+footer p {
+    color: rgb(157, 151, 151);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 60px;
 }
 
 /* ========= Media Query styles =============== */
