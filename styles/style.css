@@ -32,15 +32,32 @@ body {
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    transition: 0.3s;
+    background-size: 400% 400%;
+    animation: bnr-btn-anim 9s linear infinite;
+}
+
+@keyframes bnr-btn-anim {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
 }
 
 .btn:hover {
-    background-image: linear-gradient(20deg, #F7E93F, #FB09B4, #9100F8);
+    background-image: linear-gradient(20deg, #F7E93F, #9100F8, #FB09B4);
 }
 
 .text-grad {
-    background: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
+    background: linear-gradient(45deg, #F7E93F, #FB09B4, #9100F8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -79,7 +96,7 @@ header nav ul a {
 }
 
 header nav ul a:hover {
-    background: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
+    background: linear-gradient(270deg, #F7E93F, #FB09B4, #9100F8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -89,7 +106,6 @@ header nav .hambarger {
     display: none;
 }
 
-/* ===== Banner Section style ====== */
 /* ===== Banner Section style ====== */
 #banner {
     background-image: url(../images/hero-bg.png);
@@ -168,14 +184,36 @@ header nav .hambarger {
     font-size: 16px;
     font-weight: 500;
     color: #fff;
+    border: none;
+    cursor: pointer;
 }
+
 
 .banner-container .banner-content #spotify {
     background: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
+    background-size: 400% 400%;
+    animation: bnr-btn-anim 9s linear infinite;
+}
+
+@keyframes bnr-btn-anim {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
 }
 
 .banner-content #spotify:hover {
-    background: #00FF88;
+    animation: none;
+    background-image: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
 }
 
 .banner-content #subscribe {
@@ -183,9 +221,25 @@ header nav .hambarger {
     background: transparent;
     color: #00FF88;
     margin-left: 8px;
+    animation: borderColor 8s linear infinite;
+}
+
+@keyframes borderColor {
+    0% {
+        border-color: #9100F8;
+    }
+
+    50% {
+        border-color: #F7E93F;
+    }
+
+    100% {
+        border-color: #FB09B4;
+    }
 }
 
 .banner-content #subscribe:hover {
+    animation: none;
     background: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
     border: 1px solid #1A0B2E;
     color: #fff;
@@ -504,7 +558,7 @@ footer .footer-social-icon>div {
     }
 
 
-/* =========== Media Query Styles ================== */
+    /* =========== Media Query Styles ================== */
 
     #banner {
         padding: 40px 20px;
@@ -535,7 +589,7 @@ footer .footer-social-icon>div {
     }
 
 
-    
+
     /* =========== Some Share Styles ========================== */
     #about,
     #choose,
