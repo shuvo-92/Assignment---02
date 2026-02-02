@@ -90,20 +90,36 @@ header nav .hambarger {
 }
 
 /* ===== Banner Section style ====== */
+/* ===== Banner Section style ====== */
 #banner {
     background-image: url(../images/hero-bg.png);
     background-repeat: no-repeat;
     max-width: 1600px;
-    height: 760px;
     background-position: center;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 101px 525px;
 }
 
-#banner .circle {
+#banner .banner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+
+.banner-container .circle-container {
+    padding: 0px 100px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-container .circle {
     background-image: url(../images/hero-circle.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -116,38 +132,46 @@ header nav .hambarger {
     position: relative;
 }
 
-.pop-up {
+.circle-container .circle .pop-up {
     padding: 8px 16px;
     background-color: #00FF88;
     color: #1A0B2E;
     box-shadow: -2px 0px 7px rgb(12, 114, 10);
     border-radius: 100px;
-    font-size: 1.1rem;
+    font-size: 18px;
     font-weight: 600;
     position: absolute;
     right: 19px;
     bottom: 300px;
 }
 
-#banner .banner-content {
-    padding-top: 40px;
+
+.banner-container .banner-content {
     text-align: center;
 }
 
-#banner .banner-content h1 {
+.banner-container .banner-content h1 {
     font-size: 3.75rem;
-    font-weight: 800;
+    font-weight: 900;
     color: #fff;
     margin-bottom: 8px;
 }
 
-#banner .banner-content p {
+.banner-container .banner-content p {
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 24px;
 }
 
-.banner-content #spotify {
+.banner-container .banner-content .banner-btn {
     padding: 16px 20px;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.banner-container .banner-content #spotify {
+    background: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
 }
 
 .banner-content #spotify:hover {
@@ -155,10 +179,8 @@ header nav .hambarger {
 }
 
 .banner-content #subscribe {
-    padding: 16px 20px;
     border: 1px solid #00FF88;
     background: transparent;
-    border-radius: 100px;
     color: #00FF88;
     margin-left: 8px;
 }
@@ -168,10 +190,6 @@ header nav .hambarger {
     border: 1px solid #1A0B2E;
     color: #fff;
 }
-
-
-
-
 
 
 /* ======== About section Styles =========== */
@@ -486,40 +504,38 @@ footer .footer-social-icon>div {
     }
 
 
+/* =========== Media Query Styles ================== */
 
-    /* =========  Banner Media Styles  ================= */
     #banner {
-        max-height: 466px;
         padding: 40px 20px;
     }
 
-    #banner .circle {
-        max-width: 200px;
-        max-height: 200px;
+    .banner-container .circle-container {
+        padding: 24px 10px 24px;
     }
 
-    #banner .circle img {
-        width: 80px;  
+    .circle-container .circle {
+        width: 200px;
+        height: 200px;
     }
-    #banner .banner-content {
-   padding-top: 24px;
-}
-    #banner .banner-content h1 {
-        font-size: 40px;
-        font-weight: 900;
+
+    .circle-container .circle .pop-up {
+        font-size: 16px;
+        right: 12px;
+        bottom: 170px;
+        box-shadow: -2px 2px 9px #9100F8;
     }
-    .banner-content #spotify {
-    padding: 12px 20px;
-}
-.banner-content #subscribe {
-    padding: 12px 20px;}
+
+    .circle-container .circle img {
+        width: 25%;
+    }
+
+    .banner-container .banner-content h1 {
+        font-size: 2.5rem;
+    }
 
 
-
-
-
-
-
+    
     /* =========== Some Share Styles ========================== */
     #about,
     #choose,
