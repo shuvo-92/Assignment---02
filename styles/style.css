@@ -219,12 +219,12 @@ header nav .hambarger {
     background: transparent;
     color: #00FF88;
     margin-left: 8px;
-    animation: borderColor 8s linear infinite;
+    animation: borderColor 4s linear infinite;
 }
 
 @keyframes borderColor {
     0% {
-        border-color: #9100F8;
+        border-color: #00FF88;
     }
 
     50% {
@@ -232,7 +232,7 @@ header nav .hambarger {
     }
 
     100% {
-        border-color: #FB09B4;
+        border-color: #00FF88;
     }
 }
 
