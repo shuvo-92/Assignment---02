@@ -37,7 +37,6 @@ body {
 }
 
 @keyframes bnr-btn-anim {
-
     0% {
         background-position: 0% 50%;
     }
@@ -49,11 +48,11 @@ body {
     100% {
         background-position: 0% 50%;
     }
-
 }
 
 .btn:hover {
-    background-image: linear-gradient(20deg, #F7E93F, #9100F8, #FB09B4);
+    animation: none;
+    background: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
 }
 
 .text-grad {
@@ -208,12 +207,11 @@ header nav .hambarger {
     100% {
         background-position: 0% 50%;
     }
-
 }
 
 .banner-content #spotify:hover {
     animation: none;
-    background-image: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
+    background: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
 }
 
 .banner-content #subscribe {
